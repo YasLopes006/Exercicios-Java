@@ -1,71 +1,57 @@
 public class Main {
+
     public static void main(String[] args) {
-        Carro carro = new Carro("Fusca");
+      Carro queen = new Carro("volkswagen", "gol", 1999);
+        Carro king = new Carro("fiat", "argo", 2022);
 
-        System.out.println("Modelo: " + carro.getModelo());
-        System.out.println("Velocidade inicial: " + carro.getVelocidade() + " km/h");
+//Carro 
 
-        carro.acelerar(50);
-        System.out.println("Velocidade após acelerar: " + carro.getVelocidade() + " km/h");
+        ContaBancaria conta = new ContaBancaria();
+        conta.titular = "João";
 
-        carro.frear(20);
-        System.out.println("Velocidade após frear: " + carro.getVelocidade() + " km/h");
+        conta.depositar(500);
+        conta.mostrarSaldo();
 
-        carro.frear(40);
-        System.out.println("Velocidade final: " + carro.getVelocidade() + " km/h");
+        conta.sacar(200);
+        conta.mostrarSaldo();
+
+        conta.sacar(400);
+        conta.mostrarSaldo();
+//COntaaaaaaaa
+
+        Jogador jogador1 = new Jogador();
+        jogador1.nome = "Arthur";
+        jogador1.vida = 100;
+        jogador1.forca = 20;
+
+        Jogador jogador2 = new Jogador();
+        jogador2.nome = "Lancelot";
+        jogador2.vida = 80;
+        jogador2.forca = 15;
+
+        System.out.println("Antes do ataque:");
+        jogador1.mostrarStatus();
+        jogador2.mostrarStatus();
+
+        jogador1.atacar(jogador2);
+
+        System.out.println("\nDepois do ataque:");
+        jogador1.mostrarStatus();
+        jogador2.mostrarStatus();
+
+//JOgadorrrr
+
+        Lampada lampada = new Lampada();
+        lampada.cor = "Branca";
+
+        lampada.ligar();
+        lampada.mostrarEstado();
+
+        lampada.desligar();
+        lampada.mostrarEstado();
+    
+
+    //Lampadaaaaaaaaaaa
+
     }
 }
-
-public class Main {
-    public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("João", 25);
-        System.out.println("Nome: " + pessoa.getNome());
-        System.out.println("Idade: " + pessoa.getIdade());
-
-        pessoa.setIdade(-5); 
-        pessoa.setNome("Maria");
-        pessoa.setIdade(30);
-
-        System.out.println("Novo nome: " + pessoa.getNome());
-        System.out.println("Nova idade: " + pessoa.getIdade());
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        Produto produto = new Produto("Camiseta", 49.90);
-        System.out.println("Produto: " + produto.getNome());
-        System.out.println("Preço: R$ " + produto.getPreco());
-
-        produto.setPreco(-10); 
-        produto.setPreco(59.90); 
-
-        System.out.println("Novo preço: R$ " + produto.getPreco());
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        Termometro t = new Termometro(25.0);
-        System.out.println("Temperatura atual: " + t.getTemperatura() + " °C");
-
-        t.setTemperatura(-300); 
-        t.setTemperatura(-100); 
-
-        System.out.println("Temperatura atualizada: " + t.getTemperatura() + " °C");
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        Aluno aluno = new Aluno("Ana", 7.5);
-
-        System.out.println("Aluno: " + aluno.getNome());
-        System.out.println("Nota: " + aluno.getNota());
-        System.out.println("Aprovado? " + aluno.aprovado());
-
-        aluno.setNota(11); 
-        aluno.setNota(5.5); 
-        System.out.println("Nova nota: " + aluno.getNota());
-        System.out.println("Aprovado? " + aluno.aprovado());
-    }
-}
-
-
