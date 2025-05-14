@@ -4,7 +4,7 @@ public class Main {
       Carro queen = new Carro("volkswagen", "gol", 1999);
         Carro king = new Carro("fiat", "argo", 2022);
 
-//Carro 
+
 
         ContaBancaria conta = new ContaBancaria();
         conta.titular = "João";
@@ -17,7 +17,7 @@ public class Main {
 
         conta.sacar(400);
         conta.mostrarSaldo();
-//COntaaaaaaaa
+
 
         Jogador jogador1 = new Jogador();
         jogador1.nome = "Arthur";
@@ -39,7 +39,6 @@ public class Main {
         jogador1.mostrarStatus();
         jogador2.mostrarStatus();
 
-//JOgadorrrr
 
         Lampada lampada = new Lampada();
         lampada.cor = "Branca";
@@ -51,7 +50,6 @@ public class Main {
         lampada.mostrarEstado();
     
 
-    //Lampadaaaaaaaaaaa
-
+   
     }
 }
